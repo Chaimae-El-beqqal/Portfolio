@@ -1,0 +1,94 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+  }
+  :root{
+    --dark-purple:#210535;
+    --purple: #7b337d;
+    --light-purple: #c874b2;
+    --blue: #001736
+}
+/***** Slide Right *****/
+.slide-right {
+    animation: 3s slide-right ;
+  }
+  @keyframes slide-right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+.intro{
+  display: flex;
+    margin:200px auto;
+    background-color: transparent;
+    font-size:3rem;
+    color: white;
+
+    white-space: pre-wrap;
+}
+
+.lottie{
+  width:300px
+}
+.text{
+    font-size:2rem;
+    color: rgba(250, 235, 215, 0);
+}
+.Typewriter__wrapper{
+
+  color: white
+}
+.Typewriter__cursor{
+  background-color:transparent
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    padding:10px;
+    background-color: transparent;
+    height:30px;
+
+}
+.links a,.links p{
+  margin:10px;
+  font-size: 2rem;
+  
+}
+.links p:hover{
+  cursor: pointer;
+  color: var(--purple)
+
+}
+.links a:hover{
+  color: var(--purple)
+}
+@media (max-width: 992px) {
+  .intro{
+    margin-top:100px;
+    margin-bottom: 20px;
+    font-size:1.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .links a,.links p{
+    margin:10px;
+    font-size: 1.2rem;
+    
+  }
+  .lottie{
+    width: 120px;
+  }
+  .text{
+    font-size:1.1rem;
+}
+}

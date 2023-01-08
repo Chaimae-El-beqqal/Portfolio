@@ -1,0 +1,60 @@
+.contact-div{
+
+    width: 80%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+    margin-bottom: 50px;
+    
+}
+.contact-div h3{
+   
+    margin: 10px auto;
+    justify-self:left;
+      width:100%;
+      margin-left: -50px;
+}
+input,textarea{
+    margin:20px 0px;
+    padding:20px;
+    border: none;
+    font-size: 1rem;
+    background-color: rgb(225, 201, 225);
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+   
+}
+textarea,input{
+    width:100%
+
+}
+textarea::placeholder,input::placeholder{
+    
+    color: rgb(89, 89, 89);
+}
+textarea:focus,input:focus{
+    
+    border: 1px solid var(--purple)
+}
+button{
+    width:100%;
+    border: none;
+    font-size: 1rem;
+    color:white;
+    background-color: var(--purple);
+    padding:10px;
+    margin:20px;
+    margin-bottom: 40px;
+}
+@media (max-width:992px){
+    form,textarea,input,button{
+        width:250px;
+        padding:10px;
+        margin:10px auto;
+    
+    }
+}
